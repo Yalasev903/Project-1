@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odor - Vape Store WooCommerce HTML Template</title>
-
-    @vite('public/sass/style.scss')
-
-    <link rel="stylesheet" href="{{ asset('build/assets/style-C-SCsTSa.css') }}">
-
     <!-- Favicon img -->
-    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
-
-    <!-- Bootstrap min css -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!-- Bootstarp min css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- All min css -->
-    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
-
+    <link rel="stylesheet" href="assets/css/all.min.css">
     <!-- Swiper bundle min css -->
-    <link rel="stylesheet" href="{{ asset('css/swiper-bundle.min.css') }}">
-
-    <!-- Magnific popup css -->
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Magnigic popup css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- Animate css -->
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-
+    <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Nice select css -->
-    <link rel="stylesheet" href="{{ asset('css/nice-select.css') }}">
-
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <!-- Style css -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <!-- Header area start here -->
-    <div class="top__header pt-30 pb-30">
+    <div class="top__header black-area pt-30 pb-30">
         <div class="container">
             <div class="top__wrapper">
                 <a href="index.html" class="main__logo">
-                    <img src="{{ asset('images/logo/logo.svg') }}" alt="logo__image">
+                    <img src="assets/images/logo/logo.svg" alt="logo__image">
                 </a>
                 <div class="search__wrp">
                     <input placeholder="Search for" aria-label="Search">
@@ -56,7 +44,7 @@
                             </a>
                         </div>
                         <a href="#0" class="acc__cont">
-                            <span>
+                            <span class="text-white">
                                 My Account
                             </span>
                         </a>
@@ -66,17 +54,17 @@
                             <i class="fa-regular fa-cart-shopping"></i>
                         </span>
                         <a href="#0" class="c__one">
-                            <span>
+                            <span class="text-white">
                                 $0.00
                             </span>
                         </a>
-                        <span class="one">
+                        <span class="one text-white">
                             0
                         </span>
                     </div>
                     <div class="flag__wrap">
                         <div class="flag">
-                            <img src="{{ asset('images/flag/us.png') }}" alt="flag">
+                            <img src="assets/images/flag/us.png" alt="flag">
                         </div>
                         <select name="flag">
                             <option value="0">
@@ -97,7 +85,7 @@
             </div>
         </div>
     </div>
-    <header class="header-section">
+    <header class="header-section black-area">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-bar d-lg-none">
@@ -110,12 +98,12 @@
                         <a href="#0">Home <i class="fa-regular fa-angle-down"></i></a>
                         <ul class="sub-menu">
                             <li class="subtwohober">
-                                <a href="{{ url('/') }}">
+                                <a href="index.html">
                                     Home One
                                 </a>
                             </li>
                             <li class="subtwohober">
-                                <a href="{{ url('index-light') }}">
+                                <a href="index-light.html">
                                     Home One Light
                                 </a>
                             </li>
@@ -211,13 +199,13 @@
                 <div class="shipping__item d-none d-sm-flex align-items-center">
                     <div class="menu__right d-flex align-items-center">
                         <div class="thumb">
-                            <img src="{{ asset('images/flag/picking.png') }}" alt="image">
+                            <img src="assets/images/flag/picking.png" alt="image">
                         </div>
                         <div class="content">
-                            <p>
+                            <p class="text-white">
                                 Picking up?
                             </p>
-                            <div class="items">
+                            <div class="items ns-head">
                                 <select class="form__select p-0">
                                     <option value="1">
                                         Select Store
@@ -228,7 +216,7 @@
                                     <option value="3">
                                         Store Two
                                     </option>
-                                    <option value="3">
+                                    <option value="4">
                                         Store Three
                                     </option>
                                 </select>
@@ -237,7 +225,7 @@
                     </div>
                     <div class="menu__right d-flex align-items-center">
                         <div class="thumb">
-                            <img src="{{ asset('images/flag/shipping.png') }}" alt="image">
+                            <img src="assets/images/flag/shipping.png" alt="image">
                         </div>
                         <div class="content">
                             <p>
@@ -274,22 +262,22 @@
     <main>
 
         <!-- Banner area start here -->
-        <section class="banner-two">
+        <section class="banner-two banner-two-light black-area">
             <div class="banner-two__shape-left d-none d-lg-block wow bounceInLeft" data-wow-duration="1s"
                 data-wow-delay=".5s">
-                <img src="{{ asset('images/shape/vape1.png') }}" alt="shape">
+                <img src="assets/images/shape/vape1.png" alt="shape">
             </div>
             <div class="banner-two__shape-right d-none d-lg-block wow bounceInRight" data-wow-duration="1s"
                 data-wow-delay=".1s">
-                <img class="sway_Y__animation " src="{{ asset('images/shape/vape2.png') }}" alt="shape">
+                <img class="sway_Y__animation " src="assets/images/shape/vape2.png" alt="shape">
             </div>
             <div class="swiper banner-two__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="{{ asset('images/banner/banner-two-image1.jpg') }}"></div>
+                        <div class="slide-bg" data-background="assets/images/banner/banner-two-image1.jpg"></div>
                         <div class="container">
                             <div class="banner-two__content">
-                                <h4 data-animation="fadeInUp" data-delay="1s"><img src="{{ asset('images/icon/fire.svg') }}"
+                                <h4 data-animation="fadeInUp" data-delay="1s"><img src="assets/images/icon/fire.svg"
                                         alt="icon"> GET <span class="primary-color">25% OFF</span> NOW</h4>
                                 <h1 data-animation="fadeInUp" data-delay="1.3s">Find everything <br>
                                     for <span class="primary-color">vaping</span></h1>
@@ -313,10 +301,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="{{ asset('images/banner/banner-two-image2.jpg') }}"></div>
+                        <div class="slide-bg" data-background="assets/images/banner/banner-two-image2.jpg"></div>
                         <div class="container">
                             <div class="banner-two__content">
-                                <h4 data-animation="fadeInUp" data-delay="1s"><img src="{{ asset('images/icon/fire.svg') }}"
+                                <h4 data-animation="fadeInUp" data-delay="1s"><img src="assets/images/icon/fire.svg"
                                         alt="icon"> GET <span class="primary-color">25% OFF</span> NOW</h4>
                                 <h1 data-animation="fadeInUp" data-delay="1.3s">Find everything <br>
                                     for <span class="primary-color">vaping</span></h1>
@@ -341,10 +329,10 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="slide-bg" data-background="{{ asset('images/banner/banner-two-image3.jpg') }}"></div>
+                        <div class="slide-bg" data-background="assets/images/banner/banner-two-image3.jpg"></div>
                         <div class="container">
                             <div class="banner-two__content">
-                                <h4 data-animation="fadeInUp" data-delay="1s"><img src="{{ asset('images/icon/fire.svg') }}"
+                                <h4 data-animation="fadeInUp" data-delay="1s"><img src="assets/images/icon/fire.svg"
                                         alt="icon"> GET <span class="primary-color">25% OFF</span> NOW</h4>
                                 <h1 data-animation="fadeInUp" data-delay="1.3s">Find everything <br>
                                     for <span class="primary-color">vaping</span></h1>
@@ -371,15 +359,16 @@
                 </div>
             </div>
             <div class="banner-two__arry-btn">
-                <button class="arry-prev mb-15 banner-two__arry-prev"><i class="fa-light fa-chevron-left"></i></button>
+                <button class="arry-prev mb-15 banner-two__arry-prev"><i
+                        class="fa-light text-white fa-chevron-left"></i></button>
                 <button class="arry-next active banner-two__arry-next"><i
-                        class="fa-light fa-chevron-right"></i></button>
+                        class="fa-light text-white fa-chevron-right"></i></button>
             </div>
         </section>
         <!-- Banner area end here -->
 
         <!-- Category area start here -->
-        <section class="category-area category-two pb-130 pt-130">
+        <section class="category-area black-area category-two pb-130 pt-130">
             <div class="container">
                 <div class="bor-bottom pb-130">
                     <div class="sub-title text-center mb-65 wow fadeInUp" data-wow-delay=".1s">
@@ -391,9 +380,9 @@
                             <div class="swiper-slide">
                                 <div class="category__item category-two__item text-center">
                                     <a href="shop.html" class="category__image d-block">
-                                        <img src="{{ asset('images/category/category-image1.png') }}" alt="image">
+                                        <img src="assets/images/category/category-image1.png" alt="image">
                                         <div class="category-icon">
-                                            <img src="{{ asset('images/category/category-icon1.png') }}" alt="icon">
+                                            <img src="assets/images/category/category-icon1.png" alt="icon">
                                         </div>
                                     </a>
                                     <h4 class="mt-30"><a href="shop.html">best e- juice</a></h4>
@@ -402,9 +391,9 @@
                             <div class="swiper-slide">
                                 <div class="category__item category-two__item text-center">
                                     <a href="shop.html" class="category__image d-block">
-                                        <img src="{{ asset('images/category/category-image2.png') }}" alt="image">
+                                        <img src="assets/images/category/category-image2.png" alt="image">
                                         <div class="category-icon">
-                                            <img src="{{ asset('images/category/category-icon2.png') }}" alt="icon">
+                                            <img src="assets/images/category/category-icon2.png" alt="icon">
                                         </div>
                                     </a>
                                     <h4 class="mt-30"><a href="shop.html">best mod</a></h4>
@@ -413,9 +402,9 @@
                             <div class="swiper-slide">
                                 <div class="category__item category-two__item text-center">
                                     <a href="shop.html" class="category__image d-block">
-                                        <img src="{{ asset('images/category/category-image3.png') }}" alt="image">
+                                        <img src="assets/images/category/category-image3.png" alt="image">
                                         <div class="category-icon">
-                                            <img src="{{ asset('images/category/category-icon3.png') }}" alt="icon">
+                                            <img src="assets/images/category/category-icon3.png" alt="icon">
                                         </div>
                                     </a>
                                     <h4 class="mt-30"><a href="shop.html">best pan</a></h4>
@@ -424,9 +413,9 @@
                             <div class="swiper-slide">
                                 <div class="category__item category-two__item text-center">
                                     <a href="shop.html" class="category__image d-block">
-                                        <img src="{{ asset('images/category/category-image4.png') }}" alt="image">
+                                        <img src="assets/images/category/category-image4.png" alt="image">
                                         <div class="category-icon">
-                                            <img src="{{ asset('images/category/category-icon4.png') }}" alt="icon">
+                                            <img src="assets/images/category/category-icon4.png" alt="icon">
                                         </div>
                                     </a>
                                     <h4 class="mt-30"><a href="shop.html">best pod</a></h4>
@@ -435,9 +424,9 @@
                             <div class="swiper-slide">
                                 <div class="category__item category-two__item text-center">
                                     <a href="shop.html" class="category__image d-block">
-                                        <img src="{{ asset('images/category/category-image5.png') }}" alt="image">
+                                        <img src="assets/images/category/category-image5.png" alt="image">
                                         <div class="category-icon">
-                                            <img src="{{ asset('images/category/category-icon5.png') }}" alt="icon">
+                                            <img src="assets/images/category/category-icon5.png" alt="icon">
                                         </div>
                                     </a>
                                     <h4 class="mt-30"><a href="shop.html">best tank</a></h4>
@@ -446,9 +435,9 @@
                             <div class="swiper-slide">
                                 <div class="category__item category-two__item text-center">
                                     <a href="shop.html" class="category__image d-block">
-                                        <img src="{{ asset('images/category/category-image6.png') }}" alt="image">
+                                        <img src="assets/images/category/category-image6.png" alt="image">
                                         <div class="category-icon">
-                                            <img src="{{ asset('images/category/category-icon6.png') }}" alt="icon">
+                                            <img src="assets/images/category/category-icon6.png" alt="icon">
                                         </div>
                                     </a>
                                     <h4 class="mt-30"><a href="shop.html">Best vaps</a></h4>
@@ -463,13 +452,13 @@
 
         <!-- View area start here -->
         <section class="view-area">
-            <div class="bg-image view__bg" data-background="{{ asset('images/bg/view-bg.jpg') }}"></div>
+            <div class="bg-image view__bg" data-background="assets/images/bg/view-bg.jpg"></div>
             <div class="container">
                 <div class="row g-4">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".1s">
                         <div class="view__left-item">
                             <div class="image">
-                                <img src="{{ asset('images/view/view-image1.jpg') }}" alt="image">
+                                <img src="assets/images/view/view-image1.jpg" alt="image">
                             </div>
                             <div class="view__left-content sub-bg">
                                 <h2><a class="primary-hover" href="shop-single.html">The best e-liqued bundles</a>
@@ -479,7 +468,7 @@
                                     in every market. only a variety of vaping
                                     products</p>
                                 <a class="btn-two" href="shop-single.html"><span>Shop Now</span></a>
-                                <a class="off-btn" href="#0"><img class="mr-10" src="images/icon/fire.svg"
+                                <a class="off-btn" href="#0"><img class="mr-10" src="assets/images/icon/fire.svg"
                                         alt="icon"> GET
                                     <span class="primary-color">25%
                                         OFF</span> NOW</a>
@@ -494,7 +483,7 @@
                                 <a class="btn-two" href="shop-single.html"><span>Shop Now</span></a>
                             </div>
                             <div class="view__image">
-                                <img src="{{ asset('images/view/view-image2.jpg') }}" alt="image">
+                                <img src="assets/images/view/view-image2.jpg" alt="image">
                             </div>
                         </div>
                         <div class="view__item wow fadeInUp" data-wow-delay=".3s">
@@ -504,7 +493,7 @@
                                 <a class="btn-two" href="shop-single.html"><span>Shop Now</span></a>
                             </div>
                             <div class="view__image">
-                                <img src="{{ asset('images/view/view-image3.jpg') }}" alt="image">
+                                <img src="assets/images/view/view-image3.jpg" alt="image">
                             </div>
                         </div>
                     </div>
@@ -547,9 +536,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image1.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image1.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image3.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image3.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -575,9 +564,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image2.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image2.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -603,9 +592,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image3.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image3.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image5.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image5.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -632,9 +621,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image4.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image6.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image6.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -661,9 +650,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image5.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image5.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image3.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image3.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -690,9 +679,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image6.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image6.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -718,9 +707,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image7.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image7.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -746,9 +735,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image8.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image8.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -779,9 +768,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image4.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image6.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image6.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -808,9 +797,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image5.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image5.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image3.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image3.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -837,9 +826,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image6.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image6.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -865,9 +854,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image7.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image7.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -893,9 +882,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image8.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image8.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -926,9 +915,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image1.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image1.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image3.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image3.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -954,9 +943,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image2.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image2.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -982,9 +971,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image3.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image3.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image5.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image5.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -1011,9 +1000,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image7.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image7.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -1039,9 +1028,9 @@
                                 <div class="product__item bor">
                                     <a href="#0" class="wishlist"><i class="fa-regular fa-heart"></i></a>
                                     <a href="shop-single.html" class="product__image pt-20 d-block">
-                                        <img class="font-image" src="{{ asset('images/product/product-image8.png') }}"
+                                        <img class="font-image" src="assets/images/product/product-image8.png"
                                             alt="image">
-                                        <img class="back-image" src="{{ asset('images/product/product-image4.png') }}"
+                                        <img class="back-image" src="assets/images/product/product-image4.png"
                                             alt="image">
                                     </a>
                                     <div class="product__content">
@@ -1072,11 +1061,11 @@
         <!-- Product area end here -->
 
         <!-- Discount area start here -->
-        <section class="discount-area bg-image" data-background="{{ asset('images/bg/discount-bg2.jpg') }}">
+        <section class="discount-area bg-image black-area" data-background="assets/images/bg/discount-bg2.jpg">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="image mb-5 mb-lg-0"><img src="{{ asset('images/discount/discount-image2.png') }}"
+                        <div class="image mb-5 mb-lg-0"><img src="assets/images/discount/discount-image2.png"
                                 alt="image"></div>
                     </div>
                     <div class="col-lg-6">
@@ -1084,9 +1073,11 @@
                             <div class="section-header">
                                 <div class="section-title-icon wow fadeInUp" data-wow-delay=".1s">
                                     <span class="title-icon mr-10"></span>
-                                    <h2>find your best favourite</h2>
+                                    <h2 class="text-white">find your best favourite</h2>
                                 </div>
-                                <p class="mt-30 mb-55 wow fadeInUp" data-wow-delay=".2s">Sell globally in minutes with
+                                <p class="mt-30 mb-55 wow fadeInUp text-white lightPara-color" data-wow-delay=".2s">Sell
+                                    globally in
+                                    minutes with
                                     localized currencies languages, and
                                     <br>
                                     experie in every
@@ -1095,8 +1086,8 @@
                                 </p>
                                 <a class="btn-one wow fadeInUp" data-wow-delay=".3s" href="shop.html"><span>Shop
                                         Now</span></a>
-                                <a class="off-btn wow fadeInUp" data-wow-delay=".4s" href="#0"><img class="mr-10"
-                                        src="{{ asset('images/icon/fire.svg') }}" alt="icon"> GET <span
+                                <a class="off-btn wow fadeInUp text-white" data-wow-delay=".4s" href="#0"><img
+                                        class="mr-10" src="assets/images/icon/fire.svg" alt="icon"> GET <span
                                         class="primary-color">25%
                                         OFF</span> NOW</a>
                             </div>
@@ -1112,7 +1103,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-xl-6">
-                        <h4 class="mb-30 wow fadeInUp" data-wow-delay=".1s"><img src="{{ asset('images/icon/fire.svg') }}"
+                        <h4 class="mb-30 wow fadeInUp" data-wow-delay=".1s"><img src="assets/images/icon/fire.svg"
                                 alt="icon">
                             GET <span class="primary-color">25% OFF</span> NOW</h4>
                         <div class="section-header d-flex align-items-center wow fadeInUp" data-wow-delay=".2s">
@@ -1164,18 +1155,18 @@
                     <div class="col-xl-6">
                         <div class="get-now__image mt-5 mt-xl-0">
                             <div class="get-bg-image">
-                                <img src="{{ asset('images/shop/get-bg.png') }}" alt="image">
+                                <img src="assets/images/shop/get-bg.png" alt="image">
                             </div>
                             <div class="swiper get__slider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="image">
-                                            <img src="{{ asset('images/shop/get-image.png') }}" alt="image">
+                                            <img src="assets/images/shop/get-image.png" alt="image">
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="image">
-                                            <img src="{{ asset('images/shop/get-image2.png') }}" alt="image">
+                                            <img src="assets/images/shop/get-image2.png" alt="image">
                                         </div>
                                     </div>
                                 </div>
@@ -1201,15 +1192,15 @@
             <div class="marquee-inner to-left">
                 <ul class="marqee-list d-flex">
                     <li class="marquee-item">
-                        E-Cigarettes <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon"> <span>Vape Pens</span>
-                        <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon">
-                        Vape Juice <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon"> <span>E-Cigarettes</span>
-                        <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon">
-                        Vape Pens <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon"> <span>Vape Juice</span>
-                        <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon">
-                        E-Cigarettes <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon"> <span>Vape Pens</span>
-                        <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon">
-                        Vape Juice <img src="{{ asset('images/icon/title-left.svg') }}" alt="icon"> <span>E-Cigarettes</span>
+                        E-Cigarettes <img src="assets/images/icon/title-left.svg" alt="icon"> <span>Vape Pens</span>
+                        <img src="assets/images/icon/title-left.svg" alt="icon">
+                        Vape Juice <img src="assets/images/icon/title-left.svg" alt="icon"> <span>E-Cigarettes</span>
+                        <img src="assets/images/icon/title-left.svg" alt="icon">
+                        Vape Pens <img src="assets/images/icon/title-left.svg" alt="icon"> <span>Vape Juice</span>
+                        <img src="assets/images/icon/title-left.svg" alt="icon">
+                        E-Cigarettes <img src="assets/images/icon/title-left.svg" alt="icon"> <span>Vape Pens</span>
+                        <img src="assets/images/icon/title-left.svg" alt="icon">
+                        Vape Juice <img src="assets/images/icon/title-left.svg" alt="icon"> <span>E-Cigarettes</span>
                     </li>
                 </ul>
             </div>
@@ -1220,7 +1211,7 @@
         <!-- Text slider area end here -->
 
         <!-- Gallery area start here -->
-        <section class="gallery-area">
+        <section class="gallery-area gallery-light black-area">
             <div class="swiper gallery__slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -1228,7 +1219,7 @@
                             <div class="off-tag">50% <br>
                                 off</div>
                             <div class="gallery__image image">
-                                <img src="{{ asset('images/gallery/gallery-image1.jpg') }}" alt="image">
+                                <img src="assets/images/gallery/gallery-image1.jpg" alt="image">
                             </div>
                             <div class="gallery__content">
                                 <h3 class="mb-10"><a href="shop-2.html">best e-lequid</a></h3>
@@ -1242,7 +1233,7 @@
                             <div class="off-tag">50% <br>
                                 off</div>
                             <div class="gallery__image image">
-                                <img src="{{ asset('images/gallery/gallery-image2.jpg') }}" alt="image">
+                                <img src="assets/images/gallery/gallery-image2.jpg" alt="image">
                             </div>
                             <div class="gallery__content">
                                 <h3 class="mb-10"><a href="shop-2.html">best vape flavours</a></h3>
@@ -1256,7 +1247,7 @@
                             <div class="off-tag">50% <br>
                                 off</div>
                             <div class="gallery__image image">
-                                <img src="{{ asset('images/gallery/gallery-image3.jpg') }}" alt="image">
+                                <img src="assets/images/gallery/gallery-image3.jpg" alt="image">
                             </div>
                             <div class="gallery__content">
                                 <h3 class="mb-10"><a href="shop-2.html">Battery And Charger Kit</a></h3>
@@ -1270,7 +1261,7 @@
                             <div class="off-tag">50% <br>
                                 off</div>
                             <div class="gallery__image image">
-                                <img src="{{ asset('images/gallery/gallery-image4.jpg') }}" alt="image">
+                                <img src="assets/images/gallery/gallery-image4.jpg" alt="image">
                             </div>
                             <div class="gallery__content">
                                 <h3 class="mb-10"><a href="shop-2.html">best vape tanks</a></h3>
@@ -1284,7 +1275,7 @@
                             <div class="off-tag">50% <br>
                                 off</div>
                             <div class="gallery__image image">
-                                <img src="{{ asset('images/gallery/gallery-image5.jpg') }}" alt="image">
+                                <img src="assets/images/gallery/gallery-image5.jpg" alt="image">
                             </div>
                             <div class="gallery__content">
                                 <h3 class="mb-10"><a href="shop-2.html">POP Extra Strawberry</a></h3>
@@ -1299,7 +1290,7 @@
         <!-- Gallery area end here -->
 
         <!-- Brand area start here -->
-        <section class="brand-area pt-130 pb-130">
+        <section class="brand-area black-area pt-130 pb-130">
             <div class="container">
                 <div class="sub-title text-center mb-65">
                     <h3><span class="title-icon"></span> our top brands <span class="title-icon"></span>
@@ -1309,32 +1300,32 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand__item bor radius-10 text-center p-4">
-                                <img src="{{ asset('images/brand/brand1.png') }}" alt="icon">
+                                <img src="assets/images/brand/brand1.png" alt="icon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item bor radius-10 text-center p-4">
-                                <img src="{{ asset('images/brand/brand2.png') }}" alt="icon">
+                                <img src="assets/images/brand/brand2.png" alt="icon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item bor radius-10 text-center p-4">
-                                <img src="{{ asset('images/brand/brand3.png') }}" alt="icon">
+                                <img src="assets/images/brand/brand3.png" alt="icon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item bor radius-10 text-center p-4">
-                                <img src="{{ asset('images/brand/brand4.png') }}" alt="icon">
+                                <img src="assets/images/brand/brand4.png" alt="icon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item bor radius-10 text-center p-4">
-                                <img src="{{ asset('images/brand/brand5.png') }}" alt="icon">
+                                <img src="assets/images/brand/brand5.png" alt="icon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item bor radius-10 text-center p-4">
-                                <img src="{{ asset('images/brand/brand6.png') }}" alt="icon">
+                                <img src="assets/images/brand/brand6.png" alt="icon">
                             </div>
                         </div>
                     </div>
@@ -1345,7 +1336,7 @@
     </main>
 
     <!-- Footer area start here -->
-    <footer class="footer-area bg-image" data-background="{{ asset('images/footer/footer-bg.jpg') }}">
+    <footer class="footer-area black-area bg-image" data-background="assets/images/footer/footer-bg.jpg">
         <div class="container">
             <div class="footer__wrp pt-65 pb-65 bor-top bor-bottom">
                 <div class="row g-4">
@@ -1404,11 +1395,11 @@
             </div>
             <div class="footer__copy-text pt-50 pb-50">
                 <a href="index.html" class="logo d-block">
-                    <img src="{{ asset('images/logo/logo.svg') }}" alt="logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
                 </a>
                 <p>&copy; Copyright 2023 <a href="#0" class="primary-hover">odor</a> All Rights Reserved</p>
                 <a href="#0" class="payment d-block image">
-                    <img src="{{ asset('images/icon/payment.png') }}" alt="icon">
+                    <img src="assets/images/icon/payment.png" alt="icon">
                 </a>
             </div>
         </div>
@@ -1423,31 +1414,28 @@
     </div>
     <!-- Back to top area end here -->
 
-    <script src="{{ asset('build/assets/app-z-Rg4TxU.js') }}" defer></script>
-
-
     <!-- Jquery 3. 7. 1 Min Js -->
-    <script src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap min Js -->
-    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <!-- Swiper bundle min Js -->
-    <script src="{{ asset('js/swiper-bundle.min.js') }}"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- Counterup min Js -->
-    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
     <!-- Wow min Js -->
-    <script src="{{ asset('js/wow.min.js') }}"></script>
+    <script src="assets/js/wow.min.js"></script>
     <!-- Magnific popup min Js -->
-    <script src="{{ asset('js/magnific-popup.min.js') }}"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
     <!-- Nice select min Js -->
-    <script src="{{ asset('js/nice-select.min.js') }}"></script>
+    <script src="assets/js/nice-select.min.js"></script>
     <!-- Pace min Js -->
-    <script src="{{ asset('js/pace.min.js') }}"></script>
+    <script src="assets/js/pace.min.js"></script>
     <!-- Isotope pkgd min Js -->
-    <script src="{{ asset('js/isotope.pkgd.min.js') }}"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
     <!-- Waypoints Js -->
-    <script src="{{ asset('js/jquery.waypoints.js') }}"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
     <!-- Script Js -->
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
