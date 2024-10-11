@@ -153,6 +153,11 @@
                                 </a>
                             </li>
                             <li class="subtwohober">
+                                <a href="{{ url('categories') }}">
+                                    Categories
+                                </a>
+                            </li>
+                            <li class="subtwohober">
                                 <a href="{{ url('cart') }}">
                                     Cart Page
                                 </a>

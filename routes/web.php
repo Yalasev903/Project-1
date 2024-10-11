@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 
-Route::get('/', function () {
-    return view('index');
-});
-
+Route::get('/', [MainController::class, 'index']);
+Route::get('/shop', [MainController::class, 'shop']);
+Route::get('/categories', [MainController::class, 'categories']);
 
 //Страницы шаблона
 Route::get('/index-light', function () {
@@ -77,6 +77,4 @@ Route::get('/shop-single', function () {
     return view('template_pages/shop-single');
 });
 
-Route::get('/shop', function () {
-    return view('template_pages/shop');
-});
+
