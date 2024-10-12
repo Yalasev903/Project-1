@@ -53,43 +53,31 @@
         <section class="page-banner bg-image pt-130 pb-130" data-background="assets/images/banner/inner-banner.jpg">
             <div class="container">
                 <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">
-                @if ($category === 'best_e-juice')
-                best e- juice
-                @elseif ($category === 'best-mod')
-                best mod
-            @elseif ($category === 'best-pan')
-                best pan
-            @elseif ($category === 'best-pod')
-                best pod
-            @elseif ($category === 'best-tank')
-                best tank
-            @elseif ($category === 'best-vaps')
-                best vaps
-            @else
-                All categories
-                @endif</h2>
+                    {{ $category->name ?? 'All categories' }}
+                </h2>
                 <div class="breadcrumb-list wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".3s">
-                    <a href="index.html" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
+                    <a href="{{ url('/') }}" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
                             class="fa-regular text-white fa-angle-right"></i></a>
-                    <span>{{ $category }}</span>
+                    <span>{{ $category->name ?? 'All categories' }}</span>
                 </div>
             </div>
         </section>
+
         <!-- Page banner area end here -->
 
         <!-- Product area start here -->
         <section class="product-area pt-130 pb-130">
             <div class="container">
                 <div class="pb-20 bor-bottom shop-page-wrp d-flex justify-content-between align-items-center mb-65">
-                    <p class="fw-600">Showing 1–12 of 17 results</p>
+                    <p class="fw-600">Showing {{ $categories->count() }} results</p>
                     <div class="short">
                         <select name="shortList" id="shortList">
                             <option value="0">Short by popularity</option>
-                            <option value="1">E-Cigarette</option>
-                            <option value="2">POP Extra</option>
-                            <option value="3">Charger Kit</option>
-                            <option value="4">100ml Nic</option>
-                            <option value="5">Salt Juice</option>
+                            @foreach($categories as $cat)
+                                <option value="{{ $cat->slug }}" {{ $cat->slug == ($category->slug ?? '') ? 'selected' : '' }}>
+                                    {{ $cat->name }}
+                                </option>
+                            @endforeach
                         </select>
                     </div>
                 </div>

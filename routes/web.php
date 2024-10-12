@@ -2,13 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\CategoryController;
 
 
 Route::get('/', [MainController::class, 'index']);
-Route::get('/shop', [MainController::class, 'shop']);
+Route::get('/shop', [CategoryController::class, 'shop']);
 
-Route::get('/categories', [MainController::class, 'categories']);
-Route::get('/category/{category}', [MainController::class, 'category']);
+Route::get('/categories', [CategoryController::class, 'categories']);
+Route::get('/category/{categorySlug}', [CategoryController::class, 'category']);
+Route::get('/category/{slug}', [CategoryController::class, 'category'])->name('category.show');
 
 Route::get('/cart', [MainController::class, 'cart']);
 Route::get('/shop-single/{product}', [MainController::class, 'shop_single']);
