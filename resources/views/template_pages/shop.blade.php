@@ -52,11 +52,26 @@
         <!-- Page banner area start here -->
         <section class="page-banner bg-image pt-130 pb-130" data-background="assets/images/banner/inner-banner.jpg">
             <div class="container">
-                <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">shop layout 01</h2>
+                <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">
+                @if ($category === 'best_e-juice')
+                best e- juice
+                @elseif ($category === 'best-mod')
+                best mod
+            @elseif ($category === 'best-pan')
+                best pan
+            @elseif ($category === 'best-pod')
+                best pod
+            @elseif ($category === 'best-tank')
+                best tank
+            @elseif ($category === 'best-vaps')
+                best vaps
+            @else
+                All categories
+                @endif</h2>
                 <div class="breadcrumb-list wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".3s">
                     <a href="index.html" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
                             class="fa-regular text-white fa-angle-right"></i></a>
-                    <span>shop layout 01</span>
+                    <span>{{ $category }}</span>
                 </div>
             </div>
         </section>

@@ -4,7 +4,7 @@
     <div id="targetElement" class="side_bar slideInRight side_bar_hidden">
         <div class="side_bar_overlay"></div>
         <div class="logo mb-30">
-            <img src="assets/images/logo/logo.svg" alt="logo">
+            <img src="{{ asset('images/logo/logo.svg') }}" alt="logo">
         </div>
         <p class="text-justify">The foundation of any road is the subgrade, which provides a stable base for the road
             layers above. Proper compaction of
@@ -50,13 +50,13 @@
 
     <main>
         <!-- Page banner area start here -->
-        <section class="page-banner bg-image pt-130 pb-130" data-background="assets/images/banner/inner-banner.jpg">
+        <section class="page-banner bg-image pt-130 pb-130" data-background="{{ asset('images/banner/inner-banner.jpg') }}">
             <div class="container">
                 <h2 class="wow fadeInUp mb-15" data-wow-duration="1.1s" data-wow-delay=".1s">Shop Details</h2>
                 <div class="breadcrumb-list wow fadeInUp" data-wow-duration="1.3s" data-wow-delay=".3s">
-                    <a href="index.html" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
+                    <a href="{{ url('index') }}" class="primary-hover"><i class="fa-solid fa-house me-1"></i> Home <i
                             class="fa-regular text-white fa-angle-right"></i></a>
-                    <a href="shop.html" class="primary-hover"> shop <i
+                    <a href="{{ url('shop') }}" class="primary-hover"> shop <i
                             class="fa-regular text-white fa-angle-right"></i></a>
                     <span>Shop Details</span>
                 </div>
@@ -75,32 +75,32 @@
                                 <div class="swiper shop-single-slide">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="assets/images/shop/01.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="assets/images/shop/02.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="assets/images/shop/03.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="assets/images/shop/04.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-3 swiper shop-slider-thumb">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide slide-smoll">
-                                            <img src="assets/images/shop/01.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                         <div class="swiper-slide slide-smoll">
-                                            <img src="assets/images/shop/02.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                         <div class="swiper-slide slide-smoll">
-                                            <img src="assets/images/shop/03.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                         <div class="swiper-slide slide-smoll">
-                                            <img src="assets/images/shop/04.jpg" alt="image">
+                                            <img src="{{ asset('images/shop/01.jpg') }}" alt="image">
                                         </div>
                                     </div>
                                 </div>
@@ -263,7 +263,7 @@
                             <div class="review-wrp">
                                 <div class="abmin d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                                     <div class="img pb-4 pb-md-0 me-4">
-                                        <img src="assets/images/about/comment3.png" alt="image">
+                                        <img src="{{ asset('images/about/comment3.png') }}" alt="image">
                                     </div>
                                     <div class="content position-relative p-4 bor">
                                         <div class="head-wrp pb-1 d-flex flex-wrap justify-content-between">
@@ -296,7 +296,7 @@
                                 </div>
                                 <div class="abmin d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                                     <div class="img pb-4 pb-md-0 me-4">
-                                        <img src="assets/images/about/comment2.png" alt="image">
+                                        <img src="{{ asset('images/about/comment3.png') }}" alt="image">
                                     </div>
                                     <div class="content position-relative p-4 bor">
                                         <div class="head-wrp pb-1 d-flex flex-wrap justify-content-between">
@@ -329,7 +329,7 @@
                                 </div>
                                 <div class="abmin d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                                     <div class="img pb-4 pb-md-0 me-4">
-                                        <img src="assets/images/about/comment1.png" alt="image">
+                                        <img src="{{ asset('images/about/comment3.png') }}" alt="image">
                                     </div>
                                     <div class="content position-relative p-4 bor">
                                         <div class="head-wrp pb-1 d-flex flex-wrap justify-content-between">
@@ -362,7 +362,7 @@
                                 </div>
                                 <div class="abmin d-flex flex-wrap flex-md-nowrap align-items-center pb-4">
                                     <div class="img pb-4 pb-md-0 me-4">
-                                        <img src="assets/images/about/comment4.png" alt="image">
+                                        <img src="{{ asset('images/about/comment3.png') }}" alt="image">
                                     </div>
                                     <div class="content position-relative p-4 bor">
                                         <div class="head-wrp pb-1 d-flex flex-wrap justify-content-between">
